@@ -1,0 +1,16 @@
+.wrapper {
+    display: flex;
+    /* Equalizes both page content and sidebar height */
+    align-items: stretch;
+}
+
+/* set min-height on sidebar bc unaware if content will vertically fill the entire screen  */
+#sidebar {
+    min-width:250px;
+    max-width: 250px;
+    min-height: 100vh;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
